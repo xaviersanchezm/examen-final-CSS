@@ -1,8 +1,18 @@
 
+body{
+  margin:0;
+  width: 90%;
+  padding-left:5%;
+  padding-right:5%;
+  background-color: black;
+  }
 #container {
+  margin:0;
+  padding: 0;
+  border: 0;
   background-color: #5B7989;
   color: white;
-  border-radius: 10px,10px;
+  border-radius: 10px 10px 0 0;
   text-align:left;
 }
 #container h1{
@@ -14,26 +24,97 @@
       }
   #menu-principal{
       background-color: #5B7989;
+      margin: 0;
       float: right;
       color: white;
       padding-top: 30px;
+      border-radius: 0px 10px 0 0;
   }
-  @media (max-width: 700px) {
-  #menu-principal {
-  padding-top:0;
-  float:none;
+  @media (max-width: 900px) {
+    #menu-principal {
+      padding:0;
+      margin:0;
+      float:none;
   }
   }
   #menu-principal ul{
     list-style-type: none;
     text-align: center;
+    margin: 0;
    }
  #menu-principal li{
    display: inline-flex;
    text-align: center;
    margin: 0 20px 0 0;
+
    }
   #menu-principal li a {
       color: white;
       text-decoration: none;
    }
+   #ImagenCentral{
+     padding:0;
+     margin:0;
+     border:0;
+     background-color: #82c3a6;
+   }
+   #ImagenCentral img{
+     width: 80%;
+     padding:10%;
+     padding-top: 3%;
+     padding-bottom: 3%;
+     background-color: #82c3a6;
+    }
+    @media (max-width: 900px) {
+      #ImagenIzquierda{
+        padding:0;
+        margin:0;
+        border:0;
+        background-color:#d5c75f;
+      }
+        #ImagenDerecha{
+          padding:0;
+          margin:0;
+          border:0;
+        background-color:#d5c75f;
+      }
+    }
+      @media (min-width: 900px) {
+    #ImagenIzquierda{
+      padding:0;
+      margin:0;
+      border:0;
+      width:50%;
+      background-color:#d5c75f;
+    }
+      #ImagenDerecha{
+      padding:0;
+      margin:0;
+      border:0;
+      width:50%;
+      background-color:#d5c75f;
+      float: right;
+    }
+  }
+    #ImagenIzquierda img{
+      width: 90%;
+      padding:5%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      background-color:#d5c75f;
+    }
+    #ImagenIzquierda img:hover{
+      	transform: rotate(10deg);
+          box-shadow: 2px 2px #82c3a6;
+    }
+    #ImagenDerecha img{
+      width: 90%;
+      padding:5%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      background-color:#d5c75f;
+    }
+    #ImagenDerecha img:hover{
+        transform: translate(-5px,20px);
+          box-shadow: 2px 2px #82c3a6;
+}
