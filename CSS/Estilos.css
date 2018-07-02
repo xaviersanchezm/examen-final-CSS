@@ -20,55 +20,61 @@ body{
         align-content: center;
       }
     }
-#container {
-  margin:0;
-  padding: 0;
-  border: 0;
-  background-color: #5B7989;
-  color: white;
-  border-radius: 10px 10px 0 0;
-  }
-  #container h1{
-    color: white;
-  	text-shadow: 2px 2px 2px #02010a;
-    display:inline-flex;
-    text-align:center;
-    margin-left: 10px;
-      }
-  #menu-principal{
+    #container {
+      margin:0;
+      padding: 0;
+      border: 0;
       background-color: #5B7989;
-      margin: 0;
-      float: right;
       color: white;
-      padding-top: 30px;
-      border-radius: 0px 10px 0 0;
-      font-size: 25px;
-  }
+      border-radius: 10px 10px 0 0;
+      animation: slidein 2s;
+    }
+    @-webkit-keyframes slidein {
+      0%{ margin-top: 150%;}
+      60%{ margin-top: -5%;}
+      100%{ margin-top: 0%;}
+    }
+      #container h1{
+        color: white;
+  	    text-shadow: 2px 2px 2px #02010a;
+        display:inline-flex;
+        text-align:center;
+        margin-left: 10px;
+       }
+      #menu-principal{
+        background-color: #5B7989;
+        margin: 0;
+        float: right;
+        color: white;
+        padding-top: 30px;
+        border-radius: 0px 10px 0 0;
+        font-size: 25px;
+      }
   @media (max-width: 900px) {
     #menu-principal {
       padding:0;
       margin:0;
       float:none;
-  }
-  }
+    }
+    }
   #menu-principal ul{
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-   }
- #menu-principal li{
-   display: inline-flex;
-   text-align: center;
-   margin: 0 20px 0 0;
-   }
-  #menu-principal li a {
+      list-style-type: none;
+      text-align: center;
+      margin: 0;
+    }
+    #menu-principal li{
+      display: inline-flex;
+      text-align: center;
+      margin: 0 20px 0 0;
+    }
+    #menu-principal li a {
       color: white;
       text-decoration: none;
-   }
-   #imagenes img{
-     box-shadow: 2px 2px #02010a;
-   }
-   #ImagenCentral{
+    }
+  #imagenes img{
+      box-shadow: 2px 2px #02010a;
+    }
+  #ImagenCentral{
      padding:0;
      margin:0;
      border:0;
